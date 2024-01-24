@@ -24,6 +24,25 @@ html {
     padding: 16px 0 0 16px;
 }
 
+.sidebar_navigation .logo{
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar_navigation .logo img{
+    width: 80px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar nav ul{
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+    list-style: none;
+}
+
 .sidebar nav {
     font-family: "DM Sans", sans-serif;
 }
