@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio_Caio</title>
     <meta name="description" content="Portfolio de estudo iniciante de Caio Pinheiro (github.com/caiothecreator)">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./src/Estilos/reset.css">
+    <link rel="stylesheet" href="./src/Estilos/vars.css">
+    <link rel="stylesheet" type="text/css" href="./src/Estilos/estilo-sidebar-footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -19,7 +20,7 @@
         <nav class="sidebar_navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/virtualadepts.jpeg" alt="logo-vaport">
+                    <img src="./src/assets/virtualadepts.jpeg" alt="logo-vaport">
                 </a>
             </div>
             <span>Portfolio_Caio</span>
@@ -32,8 +33,8 @@
              </li>
              <li>
                 <a>
-                    <span class="fa fa-magnifying-glass"></span>
-                    <span>Buscar</span>
+                    <span class="fa fas fa-book"></span>
+                    <span class="prj">Projetos</span>
                 </a>
              </li>
              <li>
@@ -47,30 +48,27 @@
         </nav>
         <div class="library">
 
-            <div class="library__content">
-                <button class="library__button">
-                    <span class="fa fas fa-book"></span>
-                    <span class="prj">Projetos</span>
-                </button>
-                <span class="fa fa-plus"></span>
-
-            </div>
-
-            <section class="section-playlist">
-                <div class="section-playlist__content">
-                    <span class="text title"> Criar projetos</span>
-                    <button class="section-playlist__button">
-                        <span>Novo Projeto</span>
+                <div class="library__content">
+                    <button class="library__button">
+                        <span>Buscar Projeto</span>
                     </button>
-                    
+                    <span class="fa fa-magnifying-glass"></span>
                 </div>
-            </section>
-            <div class="languages">
-                <button class="languages__button">
-                    <span class="fa fa-globe"></span>
-                    <span>Português normal (brasileiro) </span>
-                </button>
-            </div>
+                <section class="section-playlist">
+                    <div class="section-playlist__content">
+                        <span class="text title">Crie seu projeto</span>
+
+                        <button class="section-playlist__button">
+                            <span>Novo Projeto</span>
+                        </button>
+                    </div>
+                </section>
+                <div class="languages">
+                    <button class="languages__button">
+                        <span class="fa fa-globe"></span>
+                        <span>Português do Brasil</span>
+                    </button>
+                </div>
 
         </div>
 
@@ -80,14 +78,14 @@
 
     <main>
 
-<section>
-    <header>
-        <span>BIO</span>
-        <h1>Portfolio_Caio</h1>
+        <section class="hero">
+    <header class="hero-conteudo">
+        <span>Portfolio_Caio</span>
         <hr/>
-        <h2>Portfolio de estudo iniciante de Caio Pinheiro</h2>
+        <h1>Portfolio de estudo iniciante de Caio Pinheiro</h1>
+        
     </header>
-    <div> <figure> <img src="assets/caio.jpeg"> </figure> </div>
+    <div class="photo-container"> <figure> <img src="src/assets/caio.jpeg"> </figure> </div>
 </section>
 
 <section>
@@ -104,15 +102,14 @@
         </header>
     </div>
  </div>   
-</section>
+        
 
     </main>
-
-    <footer>
-
-<p> Copyright é do Caio mesmo; 2024.1.</p>
-<p> Feito na força do ódio por Caio Pinheiro</p>
-
+    <footer class="footer">
+        <div class="text">
+            <p class="footer__title">Copyright é do Caio mesmo; 2024.1.</p>
+            <p class="footer__subtitle">Feito na força do ódio por Caio Pinheiro</p>
+        </div>
     </footer>
 </body>
 </html>
