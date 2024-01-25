@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/Estilos/reset.css">
     <link rel="stylesheet" href="./src/Estilos/vars.css">
     <link rel="stylesheet" type="text/css" href="./src/Estilos/estilo-sidebar-footer.css">
+    <link rel="stylesheet" type="text/css" href="./src/Estilos/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -48,12 +49,18 @@
         </nav>
         <div class="library">
 
+
+
+
                 <div class="library__content">
-                    <button class="library__button">
-                        <span>Buscar Projeto</span>
-                    </button>
+                    
+                    <input id="search-input" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
+                        placeholder="Buscar Projeto" value="" />
                     <span class="fa fa-magnifying-glass"></span>
                 </div>
+
+
+
                 <section class="section-playlist">
                     <div class="section-playlist__content">
                         <span class="text title">Crie seu projeto</span>
@@ -76,7 +83,7 @@
 
     </header>
 
-    <main>
+    <main class="main-container">
 
         <section class="hero">
     <header class="hero-conteudo">
@@ -88,7 +95,7 @@
     <div class="photo-container"> <figure> <img src="src/assets/caio.jpeg"> </figure> </div>
 </section>
 
-<section>
+<section class="proglang">
     <header>
         <span>Linguagens Aprendidas</span>
         <h2>Aqui estão as Linguagens que eu estou estou estudando:</h2>
@@ -102,9 +109,8 @@
         </header>
     </div>
  </div>   
-        
-
     </main>
+    
     <footer class="footer">
         <div class="text">
             <p class="footer__title">Copyright é do Caio mesmo; 2024.1.</p>
